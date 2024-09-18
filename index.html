@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./styles/output.css">
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+    <title>Sport & Saúde</title>
+</head>
+
+
+<body>
+
+    <nav class="absolute top-0 w-full bg-transparent text-white p-6 flex justify-between items-center z-20">
+        <div class="text-2xl font-bold">
+            <a href="#">Sporte & Saúde</a>
+        </div>
+
+        <ul class="hidden md:flex space-x-8 text-lg font-bold">
+            <li><a href="#sobre" class="hover:text-green-500">Sobre</a></li>
+            <li><a href="#servicos" class="hover:text-green-500">Serviços</a></li>
+            <li><a href="#planos" class="hover:text-green-500">Planos</a></li>
+            <li><a href="#contato" class="hover:text-green-500">Contato</a></li>
+        </ul>
+
+        <div class="md:hidden flex items-center">
+            <button id="menu-toggle" class="focus:outline-none">
+                <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <div id="mobile-menu"
+        class="hidden md:hidden absolute top-0 left-0 w-full bg-black bg-opacity-90 text-white flex flex-col items-center space-y-6 py-8 z-10">
+        <a href="#sobre" class="text-xl hover:text-green-500">Sobre</a>
+        <a href="#servicos" class="text-xl hover:text-green-500">Serviços</a>
+        <a href="#planos" class="text-xl hover:text-green-500">Planos</a>
+        <a href="#contato" class="text-xl hover:text-green-500">Contato</a>
+    </div>
+
+    <header class="relative w-full h-screen bg-black text-green-600 flex items-center justify-center">
+        <div class="absolute inset-0 bg-cover bg-center opacity-70 bg-home"></div>
+
+        <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div>
+
+        <div class="relative z-10 text-center max-w-3xl mx-auto px-6">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6">Transforme Seu Corpo, Transforme Sua Vida</h1>
+            <p class="text-lg md:text-xl mb-8">Junte-se à nossa academia e comece sua jornada fitness com os melhores
+                profissionais e estrutura de ponta.</p>
+        </div>
+    </header>
+
+    <main>
+        <!-- Section Sobre -->
+        <section id="sobre" class="py-16 bg-gray-100">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-4xl font-bold mb-6 text-gray-800">Sobre Nós</h2>
+                <p class="text-lg text-gray-600 mb-12">
+                    Na <strong>Sport & Saúde</strong>, acreditamos que transformar o corpo é transformar a vida.
+                    Oferecemos uma estrutura de ponta, equipamentos modernos e profissionais qualificados para ajudar
+                    você a atingir seus objetivos fitness, seja para ganho de massa muscular, emagrecimento ou
+                    condicionamento físico.
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                    <div class="bg-white shadow-lg rounded-lg p-6 hover:shadow-2xl transition">
+                        <h3 class="text-2xl font-bold mb-4">Equipamentos Modernos</h3>
+                        <p class="text-gray-600">
+                            Nossa academia é equipada com os melhores equipamentos do mercado, garantindo segurança e
+                            qualidade nos seus treinos.
+                        </p>
+                    </div>
+
+                    <div class="bg-white shadow-lg rounded-lg p-6 hover:shadow-2xl transition">
+                        <h3 class="text-2xl font-bold mb-4">Profissionais Qualificados</h3>
+                        <p class="text-gray-600">
+                            Treine com a orientação de especialistas que vão te guiar nos melhores métodos para alcançar
+                            seus objetivos de forma segura e eficiente.
+                        </p>
+                    </div>
+
+                    <div class="bg-white shadow-lg rounded-lg p-6 hover:shadow-2xl transition">
+                        <h3 class="text-2xl font-bold mb-4">Ambiente Motivador</h3>
+                        <p class="text-gray-600">
+                            Oferecemos um ambiente amigável e motivador para que você possa dar o seu melhor em cada
+                            treino e se sentir parte de uma comunidade fitness.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Section Serviços -->
+        <section id="servicos" class="py-16 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">Nossos Serviços</h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+
+                    <div class="text-center p-6 bg-gray-100 rounded-lg shadow-lg hover:shadow-xl transition">
+                        <img src="/assets/bg_header.jpg" alt="Musculação"
+                            class="w-full h-48 object-cover rounded-t-lg mb-4">
+
+                        <h3 class="text-2xl font-bold mb-4">Musculação</h3>
+                        <p class="text-gray-600">
+                            Nossas áreas de musculação são equipadas com máquinas modernas e pesos livres, permitindo
+                            treinos completos para todos os níveis.
+                        </p>
+                    </div>
+
+                    <div class="text-center p-6 bg-gray-100 rounded-lg shadow-lg hover:shadow-xl transition">
+                        <img src="/assets/jiu-jitus_bg.webp" alt="Personal Trainer"
+                            class="w-full h-48 object-cover rounded-t-lg mb-4">
+                        <h3 class="text-2xl font-bold mb-4">Aula de Jiu-jitsu</h3>
+                        <p class="text-gray-600">
+                            Conte com o suporte de personal trainers qualificados para planejar e acompanhar o seu
+                            progresso, garantindo resultados seguros e eficazes.
+                        </p>
+                    </div>
+
+                    <div class="text-center p-6 bg-gray-100 rounded-lg shadow-lg hover:shadow-xl transition">
+                        <img src="/assets/cardio_bg.jpg" alt="Aulas de Cardio"
+                            class="w-full h-48 object-cover rounded-t-lg mb-4">
+                        <h3 class="text-2xl font-bold mb-4">Aulas de Zumba</h3>
+                        <p class="text-gray-600">
+                            Participe de aulas dinâmicas de cardio, como spinning, HIIT, e circuitos funcionais, que
+                            ajudam a melhorar o condicionamento físico e a queima calórica.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!--Section Planos-->
+
+        <Section id="planos" class="py-16 bg-gray-100">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-4xl font-bold mb-6 text-gray-800">Nossos Planos</h2>
+                <p class="text-lg text-gray-600 mb-12">
+                    Aqui na Sport & Saúde, oferecemos planos flexíveis e acessíveis para atender a diferentes perfis e
+                    objetivos de treino. Seja você iniciante, intermediário ou avançado, temos o plano ideal para
+                    acompanhar sua jornada fitness. Confira abaixo as opções:
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-white shadow-lg rounded-lg p-6 hover:shadow-2xl transition">
+                        <h3 class="text-2xl font-bold mb-4">Plano Mensal</h3>
+                        <p class="text-gray-600 mb-4">
+                            Ideal para quem busca flexibilidade sem compromissos longos. Tenha acesso total às áreas de
+                            musculação, cardio, e aulas em grupo.
+                        </p>
+                        <ul class="list-disc list-inside text-gray-600 mb-4">
+                            <li>Acesso a todas as áreas de treino</li>
+                            <li>Aulas em grupo inclusas</li>
+                            <li>Suporte de instrutores qualificados</li>
+                        </ul>
+                        <p class="text-xl font-bold text-green-600 mb-4">R$ 110/mês</p>
+                        <button class="bg-green-600 text-white px-4 py-2 rounded-full hover:bg-green-700 transition">
+                            Assine Agora
+                        </button>
+                    </div>
+
+                    <div class="bg-white shadow-lg rounded-lg p-6 hover:shadow-2xl transition">
+                        <h3 class="text-2xl font-bold mb-4">Plano trimestral</h3>
+                        <p class="text-gray-600 mb-4">
+                            Ideal para quem busca consistência e economia. Aproveite todos os benefícios do plano mensal
+                            com desconto, além de eventos exclusivos e workshops.
+                        </p>
+                        <ul class="list-disc list-inside text-gray-600 mb-4">
+                            <li>Acesso total às áreas de treino</li>
+                            <li>Aulas em grupo inclusas</li>
+                            <li>Suporte dos instrutores qualificados </li>
+                            <li>Acesso a eventos especiais e workshops</li>
+                        </ul>
+                        <p class="text-xl font-bold text-green-600 mb-4">R$ 269 a cada 3 meses (equivalente a R$
+                            89/mês)</p>
+                        <button class="bg-green-600 text-white px-4 py-2 rounded-full hover:bg-green-700 transition">
+                            Assine Agora
+                        </button>
+                    </div>
+
+                    <div class="bg-white shadow-lg rounded-lg p-6 hover:shadow-2xl transition">
+                        <h3 class="text-2xl font-bold mb-4">Plano Semestral</h3>
+                        <p class="text-gray-600 mb-4">
+                            Perfeito para quem busca resultados consistentes. Inclui acompanhamento personalizado e
+                            avaliações físicas periódicas.
+                        </p>
+                        <ul class="list-disc list-inside text-gray-600 mb-4">
+                            <li>Acesso total às áreas de treino</li>
+                            <li>Aulas em grupo inclusas</li>
+                            <li>Suporte dos instrutores</li>
+                            <li>Avaliação física trimestral com personal trainer</li>
+                            <li>Acesso a competições internas e eventos da academia</li>
+                        </ul>
+                        <p class="text-xl font-bold text-green-600 mb-4">R$ 499 a cada 6 meses (equivalente a R$
+                            83/mês)</p>
+                        <button class="bg-green-600 text-white px-4 py-2 rounded-full hover:bg-green-700 transition">
+                            Assine Agora
+                        </button>
+                    </div>
+
+                    <div class="bg-white shadow-lg rounded-lg p-6 hover:shadow-2xl transition">
+                        <h3 class="text-2xl font-bold mb-4">Plano Anual</h3>
+                        <p class="text-gray-600 mb-4">
+                            Ideal para quem está totalmente comprometido. Inclui todos os benefícios premium, suporte
+                            completo e descontos exclusivos.
+                        </p>
+                        <ul class="list-disc list-inside text-gray-600 mb-4">
+                            <li>Acesso VIP a todas as áreas e serviços da academia</li>
+                            <li>Aulas em grupo inclusas</li>
+                            <li>Avaliações físicas trimestrais</li>
+                            <li>Suporte completo de personal trainers</li>
+                            <li>10% de desconto em produtos da loja da academia (roupas, suplementos, acessórios)</li>
+                        </ul>
+                        <p class="text-xl font-bold text-green-600 mb-4">R$ 899/ano (equivalente a R$ 75/mês)</p>
+                        <button class="bg-green-600 text-white px-4 py-2 rounded-full hover:bg-green-700 transition">
+                            Assine Agora
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </Section>
+
+
+        <!-- Section Contato -->
+        <section id="contato" class="bg-gray-900 text-white py-16">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-bold text-center mb-12">Entre em Contato</h2>
+                <div class="flex flex-col lg:flex-row justify-between items-center lg:space-x-8">
+                    <div
+                        class="bg-gray-800 rounded-lg p-8 mb-8 lg:mb-0 lg:w-1/3 lg:flex-1 text-center hover:shadow-lg transition">
+                        <h3 class="text-2xl font-bold mb-4">Nosso Endereço</h3>
+                        <p class="text-gray-400">
+                            Rua Exemplo, 123, Bairro Centro<br>
+                            Cidade, Estado, CEP 12345-678
+                        </p>
+                    </div>
+
+                    <div
+                        class="bg-gray-800 rounded-lg p-8 mb-8 lg:mb-0 lg:w-1/3 lg:flex-1 text-center hover:shadow-lg transition">
+                        <h3 class="text-2xl font-bold mb-4">Telefone e WhatsApp</h3>
+                        <p class="text-gray-400">
+                            (11) 1234-5678<br>
+                        </p>
+                    </div>
+
+                    <div class="bg-gray-800 rounded-lg p-8 lg:w-1/3 lg:flex-1 text-center hover:shadow-lg transition">
+                        <h3 class="text-2xl font-bold mb-4">E-mail</h3>
+                        <p class="text-gray-400">
+                            contato@academiafit.com.br
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="mt-12 max-w-xl mx-auto bg-white text-gray-900 p-8 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-bold mb-6">Envie uma Mensagem</h3>
+                    <form action="#" method="POST">
+                        <div class="mb-4">
+                            <label for="nome" class="block font-semibold mb-2">Nome:</label>
+                            <input type="text" id="nome" name="nome"
+                                class="w-full px-4 py-2 border border-gray-300 rounded-md" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="block font-semibold mb-2">E-mail:</label>
+                            <input type="email" id="email" name="email"
+                                class="w-full px-4 py-2 border border-gray-300 rounded-md" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="mensagem" class="block font-semibold mb-2">Mensagem:</label>
+                            <textarea id="mensagem" name="mensagem" rows="4"
+                                class="w-full px-4 py-2 border border-gray-300 rounded-md" required></textarea>
+                        </div>
+                        <button type="submit"
+                            class="bg-green-600 text-white px-6 py-2 rounded-full hover:bg-green-700 transition">
+                            Enviar
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>
